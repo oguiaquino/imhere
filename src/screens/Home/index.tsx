@@ -1,17 +1,20 @@
-import { Text, TextInput, TouchableOpacity, View } from "react-native";
+import {
+  ScrollView,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { Participant } from "../components/Participant";
 
 import { styles } from "./style";
 
 export default function Home() {
-
   function handleParticipantAdd() {
-    console.log('hi')
+    console.log("hi");
   }
 
-  function hanleParticipantRemove() {
-    
-  }
+  function hanleParticipantRemove() {}
 
   return (
     <View style={styles.container}>
@@ -31,8 +34,12 @@ export default function Home() {
         </TouchableOpacity>
       </View>
 
-      <Participant name='Guilherme Aquino' onRemove={hanleParticipantRemove}/>
-
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <Participant
+          name="Guilherme Aquino"
+          onRemove={hanleParticipantRemove}
+        />
+      </ScrollView>
     </View>
   );
 }
