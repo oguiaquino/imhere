@@ -70,9 +70,8 @@ $ cd imhere
 $ yarn ou $ npm i
 
 # Para iniciar o projeto
-$ yarn start ou $ npm run start
+$ expo start
 
-# O app vai inicializar em <http://localhost:3000>
 ```
 
 &#xa0;
